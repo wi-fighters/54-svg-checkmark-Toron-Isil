@@ -10,7 +10,7 @@ div.flower {
   border: lightsalmon 5px solid;
 }
 
-div.checkmymark {
+.checkmymark {
   margin-left: 5rem;
   margin-top: 2rem; 
   padding: 5rem;
@@ -21,14 +21,17 @@ div.checkmymark {
 
 
 .checkmymark svg {
+  background-color: magenta;
   width: 100px;
   height: 100px;
   transition: width 2s, height 4s;
+  /* transition: width 2s, transform 4s;   */
 }
 
 .checkmymark svg:hover {
   width: 300px;
-  height: 300px;  
+   /*  transform: scaleX(3); */
+height: 300px;  
 }
 
 svg:hover {
