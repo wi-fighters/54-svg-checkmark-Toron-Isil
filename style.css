@@ -1,27 +1,38 @@
-div {
-  margin-left: 10rem;
-  margin-top: 10rem; 
+
+div.flower {
+  box-sizing: border-box;
+  margin-left: 5rem;
+  margin-top: 2rem; 
+  padding: 1rem;
+  width: 350px;
+  height: 350px;
+  background-color: lightcyan; 
+  border: lightsalmon 5px solid;
+}
+
+div.checkmymark {
+  margin-left: 5rem;
+  margin-top: 2rem; 
   padding: 5rem;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-color: black; 
 }
 
 
-svg {
+.checkmymark svg {
   width: 100px;
   height: 100px;
   transition: width 2s, height 4s;
 }
 
-svg:hover {
-  /* transform: scale(1.5); */
+.checkmymark svg:hover {
   width: 300px;
   height: 300px;  
 }
 
-svg:hover #check-mark {
-  animation: color-lol 2s alternate forwards; 
+svg:hover {
+  animation: color-lol 2s ease-in-out forwards; 
 }
 
 @keyframes color-lol {
@@ -33,13 +44,12 @@ svg:hover #check-mark {
     stroke: orangered;
   }
   100% {
-
     stroke: #8a2be2;     
    }
 }
 
 
 
-svg:active {
+.checkmymark>svg:active {
   stroke: #55D21A;
 }
