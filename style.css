@@ -1,0 +1,45 @@
+div {
+  margin-left: 10rem;
+  margin-top: 10rem; 
+  padding: 5rem;
+  width: 400px;
+  height: 400px;
+  background-color: black; 
+}
+
+
+svg {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 4s;
+}
+
+svg:hover {
+  /* transform: scale(1.5); */
+  width: 300px;
+  height: 300px;  
+}
+
+svg:hover #check-mark {
+  animation: color-lol 2s alternate forwards; 
+}
+
+@keyframes color-lol {
+  0% {
+    stroke: #55D21A;
+  }
+
+  50% {
+    stroke: orangered;
+  }
+  100% {
+
+    stroke: #8a2be2;     
+   }
+}
+
+
+
+svg:active {
+  stroke: #55D21A;
+}
